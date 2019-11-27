@@ -8,11 +8,6 @@
 #include "cJSON.h"
 #include "cJSON_util.h"
 
-void cJSON_free(void *ptr)
-{
-    rt_free(ptr);
-}
-
 const char * cJSON_item_get_string(cJSON *object, const char *item_name)
 {
     cJSON *item;
